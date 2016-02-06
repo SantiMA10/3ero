@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="225" height="40" tilewidth="32" tileheight="32" nextobjectid="22">
+ <tileset firstgid="1" name="tiles32" tilewidth="32" tileheight="32" tilecount="98">
+  <image source="tiles32.png" width="448" height="224"/>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="225" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6ETVf/aZmMPSFg1VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVfXFA00YJIo=
+  </data>
+ </layer>
+ <layer name="Capa de patrones 2" width="225" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt21tKxDAUgOHiBX31YVyGbsb9r8WUoVDC9GIaclrzfXBwfPIM+BuMdRgAAAAAAAAAAAAA4Lx+oheAjn0UDFCP5uDcNAixNAixNAixNAixNAgAwNW8p3mLXgI6Nfb3meY26BBq23q2dOpv/pyNDqHcU5rnNC9pXnd8nvc3zq351vB/+NsExNIg3EX9j58G6d14x5H/zjW+bnXPcbTBR/vDVTy6Y5zfc7To8EiDS/vDFaz1d7TDFmfT2v5wdtP371aDU4d5T2tdtjibtn5+wJntOf9Ku2xxNu3ZH6J8pfmefczV6G+ty9pnU35Xu3d/qO0vz5IsvV56xqTVlLy30v2htqhuWjTY8mtBqeh+NEjvovvRIL2L7keD9O4XuJckVw==
+  </data>
+ </layer>
+ <objectgroup name="Suelos">
+  <object id="4" x="6.23312" y="1128.19">
+   <polyline points="0,0 575.525,0 756.285,-191.149 916.268,-193.227 1022.23,-97.6522 1140.66,-103.885 1173.9,-68.5643 1308.95,-66.4866 1338.04,-39.4764 1441.93,-128.818 1556.2,-128.818 1556.2,141.284"/>
+  </object>
+  <object id="5" x="1502.18" y="421.774">
+   <polyline points="0,0 0,51.9427 265.946,58.1758 261.791,211.926 282.568,211.926 286.723,24.9325 409.308,20.7771 411.386,-6.23312 2.07771,-4.15541"/>
+  </object>
+  <object id="6" x="1763.97" y="806.15">
+   <polyline points="0,0 -6.23312,178.683 27.0102,178.683 29.0879,29.0879 567.214,18.6994 571.369,-12.4662 482.028,-97.6522 376.065,-6.23312 4.15541,0"/>
+  </object>
+  <object id="7" x="1759.82" y="1267.4">
+   <polyline points="0,0 -4.15541,-147.517 353.21,-155.828 548.514,-334.511 662.788,-332.433 671.099,12.4662"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Monedas">
+  <object id="20" x="1054.82" y="939.329"/>
+  <object id="21" x="1193.41" y="1013.24"/>
+ </objectgroup>
+ <objectgroup name="Enemigos">
+  <object id="18" x="756.083" y="762.242"/>
+  <object id="19" x="1344.32" y="1039.42"/>
+ </objectgroup>
+ <objectgroup name="Pinchos">
+  <object id="12" x="352.633" y="1085.62" width="32" height="32"/>
+  <object id="14" x="321.234" y="1085.02" width="32" height="32"/>
+  <object id="15" x="384.37" y="1086.56" width="32" height="32"/>
+  <object id="16" x="413.627" y="1088.1" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Meta">
+  <object id="11" x="2643.34" y="-3.72301">
+   <polyline points="0,0 3.72301,1276.99"/>
+  </object>
+ </objectgroup>
+</map>

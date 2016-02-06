@@ -1,0 +1,26 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d","chipmunk"],
+    "renderMode" : 1,
+    "jsList" : [
+        "src/resource.js",
+        "src/app.js",
+        "src/GameScene.js",
+        "src/Moneda.js",
+        "src/ControlesLayer.js",
+        "src/Jugador.js",
+        "src/Enemigo.js",
+        "src/Pincho.js",
+        "src/GameOverLayer.js",
+        "src/GameVictoryLayer.js",
+        "src/SelectorNivel.js"
+    ]
+}
