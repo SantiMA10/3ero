@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> <level id="1">
+    <enemies>
+        <enemy>
+            <type>basico</type>
+            <x>100</x>
+            <y>-150</y>
+        </enemy>
+        <enemy>
+            <type>helicoptero</type>
+            <x>140</x>
+            <y>-200</y>
+        </enemy>
+        <enemy>
+            <type>basico</type>
+            <x>120</x>
+            <y>-250</y>
+        </enemy>
+    </enemies>
+</level>
