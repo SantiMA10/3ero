@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings 
+	xmlns="http://java.sun.com/xml/ns/persistence/orm" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+  	version="2.0">
+
+	<!-- Averia queries --> 
+<!-- 
+ 	<named-query name="Averia.findByIds">
+		<query>select a from Averia a where a.id in (?1)</query>
+	</named-query>
+
+	<named-query name="Averia.findNoFacturadasByDni">
+		<query>
+			select a 
+			from Averia a 
+			where a.vehiculo.cliente.dni = ?1 
+				and a.status = uo.ri.model.types.AveriaStatus.TERMINADA 
+		</query>
+	</named-query>
+-->	
+
+<!-- 
+	<named-query name="findItemsOnSaleByCategoryId">
+		<query>
+			<![CDATA[
+			select i 
+				from Item i join i.categories c
+				where c.id = ?2
+					and i.startDate <= ?1
+					and i.endDate >= ?1 
+			]]>
+		</query>
+	</named-query>
+ -->		
+ 
+ 	<named-query name="Mecanico.listar">
+		<query>select m from Mecanico m</query>
+	</named-query>
+	
+	<!--  
+	<named-query name="Mecanico.expertos">
+		<query>select m from Mecanico m where 1 = (select count(c) from Certificado c where c.tipo_id=?1 and c.mecanico_id=m.id)</query>
+	</named-query>
+	-->
+	
+ 	<named-query name="TipoVehiculo.listar">
+		<query>select v from TipoVehiculo v</query>
+	</named-query>
+	
+	<named-query name="Averia.buscarPorID">
+		<query>select a from Averia a where a.id=?1</query>
+	</named-query>
+	
+	<named-query name="Averia.listarPorIDVehiculo">
+		<query>select a from Averia a where a.vehiculo.id=?1</query>
+	</named-query>
+	
+	<named-query name="Certificado.existe">
+		<query>select c from Certificado c where c.mecanico.id=?1 and c.tipo.id=?2</query>
+	</named-query>
+	
+	<named-query name="Curso.listar">
+		<query>select c from Curso c</query>
+	</named-query>
+	
+	<named-query name="Curso.buscarPorCodigo">
+		<query>select c from Curso c where c.codigo=?1</query>
+	</named-query>
+	
+	<named-query name="Vehiculo.buscarPorMatricula">
+		<query>select v from Vehiculo v where v.matricula=?1 order by v.id</query>
+	</named-query>
+	
+	<named-query name="Asistencia.listarPorCurso">
+		<query>select a from Asistencia a, Curso c where a.curso.id=c.id and c.codigo=?1 order by a.fechaFin</query>
+	</named-query>
+	
+	<named-query name="Asistencia.buscarPorCursoYMecanico">
+		<query>select a from Asistencia a, Curso c where a.curso.id=c.id and c.codigo=?1 and a.mecanico.id=?2</query>
+	</named-query>
+
+</entity-mappings>
