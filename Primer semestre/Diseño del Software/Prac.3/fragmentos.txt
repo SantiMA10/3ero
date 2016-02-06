@@ -1,0 +1,24 @@
+
+CUADRADO
+// int x,y;	Coordenadas del lugar donde se ha pinchado el ratón
+// Point esquina; int ancho, alto;	Atributos del triángulo
+
+boolean pinchado = (esquina.x <= x && x <= esquina.x + ancho) && (esquina.y <= y && y <= esquina.y + alto);
+
+
+
+CIRCULO
+// int x,y;	Coordenadas del lugar donde se ha pinchado el ratón
+// Point centro; int radio;	Atributos del círculo
+
+double distancia = Math.sqrt(Math.pow(x - centro.x, 2) + Math.pow(y - centro.y, 2));
+boolean pinchado = distancia < radio;
+
+
+
+TRIANGULO
+// int x,y;	Coordenadas del lugar donde se ha pinchado el ratón
+// Point v1, v2, v3;	Los tres vértices del triángulo
+
+Point posicion = new Point(x,y);
+boolean pinchado = posicion.equals(v1) || posicion.equals(v2) || posicion.equals(v3);
