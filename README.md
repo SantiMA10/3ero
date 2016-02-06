@@ -5,7 +5,7 @@
 * Software de Entretenimiento y Videojuegos (SEV)
 * Repositorios de información (RI)
 * Software y Estandares para la Web (SEW)
-* Introducción al Proceso Software (IPS)
+* Ingeniería del Proceso Software (IPS)
 
 ### Segundo semestre:
 * Arquitectura del Software (ASW)
