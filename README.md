@@ -19,7 +19,7 @@
 * Seguridad en Sistemas de Información (SSI)
 * [Diseño de Lenguajes de Programación (DLP)](https://github.com/SantiMA10/DLP)
 
-##Licencia
+## Licencia
 
 The MIT License (MIT)
 
